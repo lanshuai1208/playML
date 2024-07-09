@@ -45,7 +45,7 @@ class SimpleLinearRegression1:
         ), "Simple Linear Regressor can only solve single feature training data."
         assert self.a_ is not None and self.b_ is not None, "must fit before predict!"
 
-        return np.array([self._predict(x) for x in x_predict])
+        return np.array([self._predict(x) for x in x_predict])  # 列表生成式
 
     def _predict(self, x_single):
         # 给定单个待预测数据x，返回x的预测结果值
