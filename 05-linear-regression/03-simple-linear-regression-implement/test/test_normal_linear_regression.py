@@ -26,5 +26,7 @@ print(reg.coef_)  # 截距
 print(reg.intercept_)  # 参数
 # 34.11739972320798
 
-print(reg.score(X_test, y_test))
+print(
+    reg.score(X_test, y_test)
+)  # R2值，发现比只有两个特征要高，说明如果我们的数据够多，并且这些特征真的更好地能反映数据的指标的话，特征越多预测结果越好
 # 0.8129794056212908
