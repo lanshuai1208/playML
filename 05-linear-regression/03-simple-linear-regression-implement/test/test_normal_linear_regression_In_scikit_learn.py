@@ -21,7 +21,6 @@ reg.fit(X_train, y_train)  # scikit-learn中线性回归模型使用 fit 方法�
 
 print(reg.coef_)  # 截距
 
-
 print(reg.intercept_)  # 参数
 
 print(reg.score(X_test, y_test))  # R2值
